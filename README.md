@@ -1,7 +1,7 @@
 # Rewrite
 Peer review and revision platform.
 
-## Setup
+## First time setup
 # OS X Sierra
 
 Install Homebrew:
@@ -43,6 +43,7 @@ Install pgAdmin (optional):
 Clone the project:
 > git clone https://github.com/mathewrichmond/rewrite.git
 > cd rewrite
+> bundle install
 
 Create local databases:
 > createdb
@@ -51,6 +52,14 @@ Create local databases:
 Launch the site:
 > rails server
 [Local site](http://localhost:3000)
+
+## Syncing with master
+
+Pull the latest code:
+> git pull
+
+Update your local database:
+> rake db:migrate
 
 ## Style and conventions
 Use complete sentences with proper punctuation for all comments and documentation. If editing an existing file follow the style already being used in that file. When creating a new file use your best judgment to follow existing patterns.

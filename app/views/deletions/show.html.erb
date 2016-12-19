@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Review:</strong>
+  <%= @deletion.review_id %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @deletion.position %>
+</p>
+
+<p>
+  <strong>Offset:</strong>
+  <%= @deletion.offset %>
+</p>
+
+<%= link_to 'Edit', edit_deletion_path(@deletion) %> |
+<%= link_to 'Back', deletions_path %>

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Insertions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Review</th>
+      <th>Position</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @insertions.each do |insertion| %>
+      <tr>
+        <td><%= insertion.review_id %></td>
+        <td><%= insertion.position %></td>
+        <td><%= insertion.content %></td>
+        <td><%= link_to 'Show', insertion %></td>
+        <td><%= link_to 'Edit', edit_insertion_path(insertion) %></td>
+        <td><%= link_to 'Destroy', insertion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Insertion', new_insertion_path %>

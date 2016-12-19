@@ -1,0 +1,1 @@
+json.array! @deletions, partial: 'deletions/deletion', as: :deletion

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Review:</strong>
+  <%= @insertion.review_id %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @insertion.position %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @insertion.content %>
+</p>
+
+<%= link_to 'Edit', edit_insertion_path(@insertion) %> |
+<%= link_to 'Back', insertions_path %>
